@@ -1,0 +1,22 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "java",
+			"mainClass": "com.examly.springapp.SpringappApplication",
+			"targetPath": "${workspaceFolder}/${workspaceFolderBasename}.jar",
+			"elements": [
+				"${compileOutput:iamneo-production_adeabaeecdeeacceebdafdfbfceafaedc}",
+				"${dependencies:iamneo-production_adeabaeecdeeacceebdafdfbfceafaedc}",
+				"${compileOutput:springapp}",
+				"${dependencies:springapp}"
+			],
+			"problemMatcher": [],
+			"label": "java: exportjar:workspace",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		}
+	]
+}
